@@ -1,0 +1,61 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+ 
+    padding: 0;
+}
+
+
+#tickZone{
+    display: grid;
+    grid-template-columns: repeat(3, 5em);
+    grid-template-rows: repeat(3, 5em);
+    border: solid black;
+    width: fit-content;
+}
+
+.square1{
+    border: solid;
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+.square2{
+    border: solid;
+    grid-row: 1/1;
+    grid-column: 2/2;
+}
+.square3{
+    border: solid;
+    grid-row: 1/1;
+    grid-column: 3/3;
+}
+.square4{
+    border: solid;
+    grid-row: 2/2;
+    grid-column: 1/1;
+}
+.square5{
+    border: solid;
+    grid-row: 2/2;
+    grid-column: 2/2;
+}
+.square6{
+    border: solid;
+    grid-row: 2/2;
+    grid-column: 3/3;
+}
+.square7{
+    border: solid;
+    grid-row: 3/3;
+    grid-column: 1/1;
+}
+.square8{
+    border: solid;
+    grid-row: 3/3;
+    grid-column: 2/2;
+}
+.square9{
+    border: solid;
+    grid-row: 3/3;
+    grid-column: 3/3;
+}
+
