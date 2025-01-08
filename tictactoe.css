@@ -2,6 +2,7 @@
     font-family: 'Courier New', Courier, monospace;
     margin: 1em;
     background-color: antiquewhite;
+    overflow: none;
 }
 
 
@@ -11,8 +12,8 @@
     margin-right: 10em;
     flex-wrap: wrap;
     margin-top: 0.3em;
+    
 }
-
 .title, .game{
     border: solid;
 }
@@ -23,22 +24,30 @@
     font-weight: bolder;
     
 }
-
 #squareZone{
     
     display: grid;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-columns: repeat(3,auto);
     height: fit-content;
     width: fit-content;
     justify-self: center;
     
 }
+#generate{
+    font-size: large;
+    grid-column: 1/4;
+}
+
+
+
 
 .square1{ 
     outline: auto;
     grid-column: 1/1;
     grid-row: 1/1;
+    
+    
     
 }
 .square2{
@@ -51,6 +60,9 @@
     grid-column: 1/1;
     grid-row: 3/3;
 }
+
+
+
 
 .square4{
     outline: auto;
@@ -68,6 +80,9 @@
     grid-column: 2/2;
     grid-row: 3/3;
 }
+
+
+
 
 .square7{
     outline: auto;
