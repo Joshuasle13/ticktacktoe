@@ -1,60 +1,90 @@
-if(typeof document !== 'undefined'){
-
-                                    let element = document.querySelector('.class-name')
 
 
-let generator   =   document.getElementById('generate');
-let squareZone  =   document.getElementById('squareZone');
-let reload      =   0;
 
-let number  = function(n){
+switch(number(9)){
+        case  1:{
+          document.getElementById('unchecked1').appendChild(computer)
+          if(document.getElementById('unchecked1').contains(computer)){
+            console.log('hola')
+          }
+          break
+        }
+        case  2:{
+          document.getElementById('unchecked2').appendChild(computer)
+          if(document.getElementById('unchecked2').contains(computer)){
+            console.log('me')
+          }
+          break
+        }
+        case  3:{
+          document.getElementById('unchecked3').appendChild(computer)
+          if(document.getElementById('unchecked3').contains(computer)){
+            console.log('hola')
+          }
+          break
+        }
+        case  4:{
+          document.getElementById('unchecked4').appendChild(computer)
+          if(document.getElementById('unchecked4').contains(computer)){
+            console.log('hola')
+          }
+          break
+        }
+        case  5:{
+          document.getElementById('unchecked5').appendChild(computer)
+          if(document.getElementById('unchecked5').contains(computer)){
+            console.log('hola')
+          }
+          break
+        }
+        case  6:{
+          document.getElementById('unchecked6').appendChild(computer)
+          if(document.getElementById('unchecked6').contains(computer)){
+            console.log('hola')
+          }
+          break
+        }
+        case  7:{
+          document.getElementById('unchecked7').appendChild(computer)
+          if(document.getElementById('unchecked7').contains(computer)){
+            console.log('hola')
+          }
+          break
+        }
+        case  8:{
+          document.getElementById('unchecked8').appendChild(computer)
+          if(document.getElementById('unchecked8').contains(computer)){
+            console.log('hola')
+          }
+          break
+        }
+        case  9:{
+          document.getElementById('unchecked9').appendChild(computer)
+          if(document.getElementById('unchecked9').contains(computer)){
+            console.log('hola')
+          }
+          break
+        }
+          
+      }
+
+
+
+
+
+      v.2
+
+
+
+       let number  = function(n){
         
-  return Math.ceil(Math.random()*n)
-  }
+      return Math.ceil(Math.random()*n)
+        }
     
 
-
-generator.addEventListener('click',function(){
-    reload++
-    
-for (let square = 0; square < 9; square++) {
-    let i       =   square + 1;
-    let div     =   document.createElement('div');
-    let player        =   document.createElement('p');
-    let computer    =   document.createElement('p');
-
-
-    
-
-    computer.id = 'cCheck'+i
-    div.id= 'unchecked' + i ;
-
-    
-
-
-    generator.innerText =   'Play again';
-
-   
-   
-    div.style.width  =  '6em';
-    div.style.height =  '6em';
-    div.style.margin =  '0px';
-    div.style.display = 'flex';
-    div.style.alignItems  = 'center'
-    div.style.justifyContent  = 'center'
-    div.classList.add('square'+i.toString());
-    div.appendChild(computer)
-    squareZone.appendChild(div);
-    
-
-
-  
-
-    div.addEventListener('click',function(){
-      
       switch(number(9)){
         case  1:{ 
-          
+          if(document.getElementById('cCheck1').innerText === ''){
           document.getElementById('cCheck1').innerText  = 'O'
           document.getElementById('cCheck1').style.fontSize = '3em';
           document.getElementById('cCheck1').style.color  = 'blue';
@@ -62,11 +92,11 @@ for (let square = 0; square < 9; square++) {
           document.getElementById('cCheck1').style.height  = 'fit-content';
           document.getElementById('cCheck1').style.alignSelf  = 'center' ;
           document.getElementById('cCheck1').style.placeSelf='center'; 
-          console.log(1)
-          
+          }else number(9)
           break
         }
         case  2:{ 
+          if(document.getElementById('cCheck2').innerText === ''){
           document.getElementById('cCheck2').innerText  = 'O'
           document.getElementById('cCheck2').style.fontSize = '3em';
           document.getElementById('cCheck2').style.color  = 'blue';
@@ -74,11 +104,11 @@ for (let square = 0; square < 9; square++) {
           document.getElementById('cCheck2').style.height  = 'fit-content';
           document.getElementById('cCheck2').style.alignSelf  = 'center' ;
           document.getElementById('cCheck2').style.placeSelf='center'; 
-          console.log(2)
-          
+        }else number(9)
           break
         }
-        case  3:{ 
+        case  3:{
+          if(document.getElementById('cCheck3').innerText === ''){ 
           document.getElementById('cCheck3').innerText  = 'O'
           document.getElementById('cCheck3').style.fontSize = '3em';
           document.getElementById('cCheck3').style.color  = 'blue';
@@ -86,11 +116,11 @@ for (let square = 0; square < 9; square++) {
           document.getElementById('cCheck3').style.height  = 'fit-content';
           document.getElementById('cCheck3').style.alignSelf  = 'center' ;
           document.getElementById('cCheck3').style.placeSelf='center'; 
-          console.log(3)
-          
+        }else number(9)
           break
         }
         case  4:{ 
+          if(document.getElementById('cCheck4').innerText === ''){
           document.getElementById('cCheck4').innerText  = 'O'
           document.getElementById('cCheck4').style.fontSize = '3em';
           document.getElementById('cCheck4').style.color  = 'blue';
@@ -98,11 +128,11 @@ for (let square = 0; square < 9; square++) {
           document.getElementById('cCheck4').style.height  = 'fit-content';
           document.getElementById('cCheck4').style.alignSelf  = 'center' ;
           document.getElementById('cCheck4').style.placeSelf='center'; 
-          console.log(4)
-          
+        }else number(9)
           break
         }
         case  5:{ 
+          if(document.getElementById('cCheck5').innerText === ''){
           document.getElementById('cCheck5').innerText  = 'O'
           document.getElementById('cCheck5').style.fontSize = '3em';
           document.getElementById('cCheck5').style.color  = 'blue';
@@ -110,11 +140,11 @@ for (let square = 0; square < 9; square++) {
           document.getElementById('cCheck5').style.height  = 'fit-content';
           document.getElementById('cCheck5').style.alignSelf  = 'center' ;
           document.getElementById('cCheck5').style.placeSelf='center'; 
-          console.log(5)
-          
+        }else number(9)
           break
         }
         case  6:{ 
+          if(document.getElementById('cCheck6').innerText === ''){
           document.getElementById('cCheck6').innerText  = 'O'
           document.getElementById('cCheck6').style.fontSize = '3em';
           document.getElementById('cCheck6').style.color  = 'blue';
@@ -122,11 +152,11 @@ for (let square = 0; square < 9; square++) {
           document.getElementById('cCheck6').style.height  = 'fit-content';
           document.getElementById('cCheck6').style.alignSelf  = 'center' ;
           document.getElementById('cCheck6').style.placeSelf='center'; 
-          console.log(6)
-          
+        }else number(9)
           break
         }
-        case  7:{ 
+        case  7:{
+          if(document.getElementById('cCheck7').innerText === ''){ 
           document.getElementById('cCheck7').innerText  = 'O'
           document.getElementById('cCheck7').style.fontSize = '3em';
           document.getElementById('cCheck7').style.color  = 'blue';
@@ -134,11 +164,11 @@ for (let square = 0; square < 9; square++) {
           document.getElementById('cCheck7').style.height  = 'fit-content';
           document.getElementById('cCheck7').style.alignSelf  = 'center' ;
           document.getElementById('cCheck7').style.placeSelf='center'; 
-          console.log(7)
-
+        }else number(9)
           break
         }
-        case  8:{ 
+        case  8:{
+          if(document.getElementById('cCheck8').innerText === ''){ 
           document.getElementById('cCheck8').innerText  = 'O'
           document.getElementById('cCheck8').style.fontSize = '3em';
           document.getElementById('cCheck8').style.color  = 'blue';
@@ -146,11 +176,11 @@ for (let square = 0; square < 9; square++) {
           document.getElementById('cCheck8').style.height  = 'fit-content';
           document.getElementById('cCheck8').style.alignSelf  = 'center' ;
           document.getElementById('cCheck8').style.placeSelf='center'; 
-          console.log(8)
-          
+        }else number(9)
           break
         }
-        case  9:{ 
+        case  9:{
+          if(document.getElementById('cCheck9').innerText === ''){ 
           document.getElementById('cCheck9').innerText  = 'O'
           document.getElementById('cCheck9').style.fontSize = '3em';
           document.getElementById('cCheck9').style.color  = 'blue';
@@ -158,49 +188,9 @@ for (let square = 0; square < 9; square++) {
           document.getElementById('cCheck9').style.height  = 'fit-content';
           document.getElementById('cCheck9').style.alignSelf  = 'center' ;
           document.getElementById('cCheck9').style.placeSelf='center'; 
-          console.log(9)
-          
+        }else number(9)
           break
         }
       }
 
-      
-  })
-
-
-
-    div.addEventListener('click',function(){
-
-          
-        div.id= 'check'+i;
-        document.getElementById('check'+i).removeChild(computer)
-      
-  
-        player.innerText  = 'X';
-        player.style.fontSize = '3em';
-        player.style.color  = 'red';
-        player.style.width  = 'fit-content';
-        player.style.height  = 'fit-content';
-        player.style.alignSelf  = 'center'; 
-        player.style.placeSelf='center';
-        div.appendChild(player);
-
-    })
-
-   
-}
-
-  if(reload===  2){
-    location.reload()
-  }
-
-
-
-
-}
-)
-
-
-
-}
 

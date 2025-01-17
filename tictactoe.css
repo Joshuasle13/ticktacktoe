@@ -2,7 +2,6 @@
     font-family: 'Courier New', Courier, monospace;
     margin: 1em;
     background-color: antiquewhite;
-    overflow: none;
 }
 
 
@@ -46,6 +45,7 @@
     outline: auto;
     grid-column: 1/1;
     grid-row: 1/1;
+    justify-content: center;
     
     
     
