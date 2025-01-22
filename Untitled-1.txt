@@ -1,90 +1,7 @@
-
-
-
-switch(number(9)){
-        case  1:{
-          document.getElementById('unchecked1').appendChild(computer)
-          if(document.getElementById('unchecked1').contains(computer)){
-            console.log('hola')
-          }
-          break
-        }
-        case  2:{
-          document.getElementById('unchecked2').appendChild(computer)
-          if(document.getElementById('unchecked2').contains(computer)){
-            console.log('me')
-          }
-          break
-        }
-        case  3:{
-          document.getElementById('unchecked3').appendChild(computer)
-          if(document.getElementById('unchecked3').contains(computer)){
-            console.log('hola')
-          }
-          break
-        }
-        case  4:{
-          document.getElementById('unchecked4').appendChild(computer)
-          if(document.getElementById('unchecked4').contains(computer)){
-            console.log('hola')
-          }
-          break
-        }
-        case  5:{
-          document.getElementById('unchecked5').appendChild(computer)
-          if(document.getElementById('unchecked5').contains(computer)){
-            console.log('hola')
-          }
-          break
-        }
-        case  6:{
-          document.getElementById('unchecked6').appendChild(computer)
-          if(document.getElementById('unchecked6').contains(computer)){
-            console.log('hola')
-          }
-          break
-        }
-        case  7:{
-          document.getElementById('unchecked7').appendChild(computer)
-          if(document.getElementById('unchecked7').contains(computer)){
-            console.log('hola')
-          }
-          break
-        }
-        case  8:{
-          document.getElementById('unchecked8').appendChild(computer)
-          if(document.getElementById('unchecked8').contains(computer)){
-            console.log('hola')
-          }
-          break
-        }
-        case  9:{
-          document.getElementById('unchecked9').appendChild(computer)
-          if(document.getElementById('unchecked9').contains(computer)){
-            console.log('hola')
-          }
-          break
-        }
-          
-      }
-
-
-
-
-
-      v.2
-
-
-
-       let number  = function(n){
-        
-      return Math.ceil(Math.random()*n)
-        }
-    
-
-      switch(number(9)){
+ switch(number(9)){
         case  1:{ 
-          if(document.getElementById('cCheck1').innerText === ''){
+          if(document.getElementById('cCheck1').innerText === '')
+            {
           document.getElementById('cCheck1').innerText  = 'O'
           document.getElementById('cCheck1').style.fontSize = '3em';
           document.getElementById('cCheck1').style.color  = 'blue';
@@ -92,11 +9,18 @@ switch(number(9)){
           document.getElementById('cCheck1').style.height  = 'fit-content';
           document.getElementById('cCheck1').style.alignSelf  = 'center' ;
           document.getElementById('cCheck1').style.placeSelf='center'; 
-          }else number(9)
+          } else if(document.getElementById('cCheck1').innerText  === 'O' && document.getElementById('cCheck'+number(9)).innerText !== 'O' ){
+            document.getElementById('cCheck'+number(9)).innerText  = 'O'
+            console.log(1)
+            
+          }
           break
+
+
         }
         case  2:{ 
-          if(document.getElementById('cCheck2').innerText === ''){
+          if(document.getElementById('cCheck2').innerText === '')
+            {
           document.getElementById('cCheck2').innerText  = 'O'
           document.getElementById('cCheck2').style.fontSize = '3em';
           document.getElementById('cCheck2').style.color  = 'blue';
@@ -104,23 +28,37 @@ switch(number(9)){
           document.getElementById('cCheck2').style.height  = 'fit-content';
           document.getElementById('cCheck2').style.alignSelf  = 'center' ;
           document.getElementById('cCheck2').style.placeSelf='center'; 
-        }else number(9)
-          break
+        } else if(document.getElementById('cCheck2').innerText  === 'O' || document.getElementById('cCheck'+number(9)).innerText !== 'O' ){
+          document.getElementById('cCheck'+number(9)).innerText  = 'O';
+          console.log(2)
+          
         }
-        case  3:{
-          if(document.getElementById('cCheck3').innerText === ''){ 
+        break
+
+
+        }
+        case  3:{ 
+          if(document.getElementById('cCheck3').innerText === '')
+            {
           document.getElementById('cCheck3').innerText  = 'O'
           document.getElementById('cCheck3').style.fontSize = '3em';
           document.getElementById('cCheck3').style.color  = 'blue';
           document.getElementById('cCheck3').style.width  = 'fit-content';
           document.getElementById('cCheck3').style.height  = 'fit-content';
           document.getElementById('cCheck3').style.alignSelf  = 'center' ;
-          document.getElementById('cCheck3').style.placeSelf='center'; 
-        }else number(9)
-          break
+          document.getElementById('cCheck3').style.placeSelf='center';  
+        } else if(document.getElementById('cCheck3').innerText  === 'O' || document.getElementById('cCheck'+number(9)).innerText !== 'O' ){
+          document.getElementById('cCheck'+number(9)).innerText  = 'O';
+          console.log(3)
+          
+        }
+        break
+
+
         }
         case  4:{ 
-          if(document.getElementById('cCheck4').innerText === ''){
+          if(document.getElementById('cCheck4').innerText === '')
+            {
           document.getElementById('cCheck4').innerText  = 'O'
           document.getElementById('cCheck4').style.fontSize = '3em';
           document.getElementById('cCheck4').style.color  = 'blue';
@@ -128,11 +66,18 @@ switch(number(9)){
           document.getElementById('cCheck4').style.height  = 'fit-content';
           document.getElementById('cCheck4').style.alignSelf  = 'center' ;
           document.getElementById('cCheck4').style.placeSelf='center'; 
-        }else number(9)
-          break
+        } else if(document.getElementById('cCheck4').innerText  === 'O' || document.getElementById('cCheck'+number(9)).innerText !== 'O' ){
+          document.getElementById('cCheck'+number(9)).innerText  = 'O';
+          console.log(4)
+          
+        }
+        break
+        
+
         }
         case  5:{ 
-          if(document.getElementById('cCheck5').innerText === ''){
+          if(document.getElementById('cCheck5').innerText === '')
+            {
           document.getElementById('cCheck5').innerText  = 'O'
           document.getElementById('cCheck5').style.fontSize = '3em';
           document.getElementById('cCheck5').style.color  = 'blue';
@@ -140,11 +85,19 @@ switch(number(9)){
           document.getElementById('cCheck5').style.height  = 'fit-content';
           document.getElementById('cCheck5').style.alignSelf  = 'center' ;
           document.getElementById('cCheck5').style.placeSelf='center'; 
-        }else number(9)
-          break
+        } else if(document.getElementById('cCheck5').innerText  === 'O' || document.getElementById('cCheck'+number(9)).innerText !== 'O' ){
+          document.getElementById('cCheck'+number(9)).innerText  = 'O';
+          console.log(5)
+          
+        }
+        break
+
+
+
         }
         case  6:{ 
-          if(document.getElementById('cCheck6').innerText === ''){
+          if(document.getElementById('cCheck6').innerText === '')
+            {
           document.getElementById('cCheck6').innerText  = 'O'
           document.getElementById('cCheck6').style.fontSize = '3em';
           document.getElementById('cCheck6').style.color  = 'blue';
@@ -152,11 +105,18 @@ switch(number(9)){
           document.getElementById('cCheck6').style.height  = 'fit-content';
           document.getElementById('cCheck6').style.alignSelf  = 'center' ;
           document.getElementById('cCheck6').style.placeSelf='center'; 
-        }else number(9)
-          break
+        } else if(document.getElementById('cCheck6').innerText  === 'O' || document.getElementById('cCheck'+number(9)).innerText !== 'O'  ){
+          document.getElementById('cCheck'+number(9)).innerText  = 'O';
+          console.log(6)
+          
         }
-        case  7:{
-          if(document.getElementById('cCheck7').innerText === ''){ 
+        break
+
+
+        }
+        case  7:{ 
+          if(document.getElementById('cCheck7').innerText === '')
+            {
           document.getElementById('cCheck7').innerText  = 'O'
           document.getElementById('cCheck7').style.fontSize = '3em';
           document.getElementById('cCheck7').style.color  = 'blue';
@@ -164,11 +124,18 @@ switch(number(9)){
           document.getElementById('cCheck7').style.height  = 'fit-content';
           document.getElementById('cCheck7').style.alignSelf  = 'center' ;
           document.getElementById('cCheck7').style.placeSelf='center'; 
-        }else number(9)
-          break
+        } else if(document.getElementById('cCheck7').innerText  === 'O' || document.getElementById('cCheck'+number(9)).innerText !== 'O' ){
+          document.getElementById('cCheck'+number(9)).innerText  = 'O';
+          console.log(7)
+          
         }
-        case  8:{
-          if(document.getElementById('cCheck8').innerText === ''){ 
+        break
+
+
+        }
+        case  8:{ 
+          if(document.getElementById('cCheck8').innerText === '')
+            {
           document.getElementById('cCheck8').innerText  = 'O'
           document.getElementById('cCheck8').style.fontSize = '3em';
           document.getElementById('cCheck8').style.color  = 'blue';
@@ -176,11 +143,18 @@ switch(number(9)){
           document.getElementById('cCheck8').style.height  = 'fit-content';
           document.getElementById('cCheck8').style.alignSelf  = 'center' ;
           document.getElementById('cCheck8').style.placeSelf='center'; 
-        }else number(9)
-          break
+        } else if(document.getElementById('cCheck8').innerText  === 'O' || document.getElementById('cCheck'+number(9)).innerText !== 'O' ){
+          document.getElementById('cCheck'+number(9)).innerText  = 'O';
+          console.log(8)
+          
+        }
+        break
+
+
         }
         case  9:{
-          if(document.getElementById('cCheck9').innerText === ''){ 
+          if(document.getElementById('cCheck9').innerText === '')
+            { 
           document.getElementById('cCheck9').innerText  = 'O'
           document.getElementById('cCheck9').style.fontSize = '3em';
           document.getElementById('cCheck9').style.color  = 'blue';
@@ -188,9 +162,13 @@ switch(number(9)){
           document.getElementById('cCheck9').style.height  = 'fit-content';
           document.getElementById('cCheck9').style.alignSelf  = 'center' ;
           document.getElementById('cCheck9').style.placeSelf='center'; 
-        }else number(9)
-          break
+        } else if(document.getElementById('cCheck9').innerText  === 'O' || document.getElementById('cCheck'+number(9)).innerText !== 'O'  ){
+          document.getElementById('cCheck'+number(9)).innerText  = 'O';
+          console.log(9)
+          
+        }
+        break
+
+
         }
       }
-
-
